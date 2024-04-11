@@ -69,7 +69,7 @@ version = "=20.0.4"
 default-features = true
 
 [workspace.dependencies]
-hcnet-strkey = "0.0.7"
+hcnet-strkey = "0.0.8"
 sep5 = "0.0.2"
 base64 = "0.21.2"
 thiserror = "1.0.46"
@@ -104,14 +104,14 @@ jsonrpsee-http-client = "0.20.1"
 jsonrpsee-core = "0.20.1"
 tokio = "1.28.1"
 
- [patch."https://github.com/HashCash-Consultants/rs-soroban-env"]
- soroban-env-host = { path = "../rs-soroban-env/soroban-env-host/" }
- [patch."https://github.com/HashCash-Consultants/rs-soroban-sdk"]
- soroban-spec = { path = "../rs-soroban-sdk/soroban-spec/" }
- soroban-token-spec = { path = "../rs-soroban-sdk/soroban-token-spec/" }
- soroban-sdk = { path = "../rs-soroban-sdk/soroban-sdk/" }
- [patch."https://github.com/HashCash-Consultants/rs-hcnet-xdr"]
- hcnet-xdr = { path = "../rs-hcnet-xdr/" }
+ #[patch."https://github.com/HashCash-Consultants/rs-soroban-env"]
+ #soroban-env-host = { path = "../rs-soroban-env/soroban-env-host/" }
+# [patch."https://github.com/HashCash-Consultants/rs-soroban-sdk"]
+ #soroban-spec = { path = "../rs-soroban-sdk/soroban-spec/" }
+# soroban-token-spec = { path = "../rs-soroban-sdk/soroban-token-spec/" }
+ #soroban-sdk = { path = "../rs-soroban-sdk/soroban-sdk/" }
+ #[patch."https://github.com/HashCash-Consultants/rs-hcnet-xdr"]
+# hcnet-xdr = { path = "../rs-hcnet-xdr/" }
 
 [profile.test-wasms]
 inherits = "release"
